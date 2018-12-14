@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MVPRandomGenerator</string>
+
+    <string name="one_fragment">One Fragment</string>
+    <string name="count">Количество генераций: %d</string>
+    <string name="seconds">%d</string>
+    <string name="result">%d</string>
+
+    <string name="sum">Сумма всех чисел: %d</string>
+</resources>
