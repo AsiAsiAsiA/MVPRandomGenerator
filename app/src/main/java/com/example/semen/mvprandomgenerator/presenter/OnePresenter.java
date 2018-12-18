@@ -19,7 +19,7 @@ public class OnePresenter extends MvpPresenter<OneView> {
     Disposable disposable;
 
     public void startGenerate() {
-        disposable = Observable.interval(1, TimeUnit.SECONDS)
+        Observable.interval(2, TimeUnit.SECONDS)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(i -> {
                             int c = RandomGenerator.generateResult();
