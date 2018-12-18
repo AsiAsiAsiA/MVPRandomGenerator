@@ -52,7 +52,7 @@ public class OneFragment extends MvpAppCompatFragment implements OneView {
         initViews(view);
 
         btnGenerate.setOnClickListener((v) -> presenter.startGenerate());
-
+        btnStop.setOnClickListener((v) -> presenter.stopGenerate());
     }
 
     private void initViews(View view) {
