@@ -14,7 +14,7 @@ import io.reactivex.android.schedulers.AndroidSchedulers;
 @InjectViewState
 public class OnePresenter extends MvpPresenter<OneView> {
     public void startGenerate() {
-        Observable.interval(1, TimeUnit.SECONDS)
+        Observable.interval(2, TimeUnit.SECONDS)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(i ->
                         getViewState().setText(RandomGenerator.generateResult(), RandomGenerator.getCount()));
