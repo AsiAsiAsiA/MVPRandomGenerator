@@ -1,11 +1,12 @@
 package com.example.semen.mvprandomgenerator.view;
 
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.v4.app.Fragment;
 
-import com.arellomobile.mvp.MvpAppCompatActivity;
 import com.example.semen.mvprandomgenerator.R;
+import com.example.semen.mvprandomgenerator.moxyandroidx.MvpAppCompatActivity;
+
+import androidx.annotation.IdRes;
+import androidx.fragment.app.Fragment;
 
 public class MainActivity extends MvpAppCompatActivity {
 

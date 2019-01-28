@@ -16,10 +16,10 @@ import io.reactivex.disposables.Disposable;
 
 @InjectViewState
 public class OnePresenter extends MvpPresenter<OneView> {
-    Disposable disposable;
+    private Disposable disposable;
 
     public void startGenerate() {
-        Observable.interval(2, TimeUnit.SECONDS)
+        disposable = Observable.interval(2, TimeUnit.SECONDS)
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(i -> {
                             int c = RandomGenerator.generateResult();
